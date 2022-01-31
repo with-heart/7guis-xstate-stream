@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# `7guis-xstate-stream`
 
-## Getting Started
+This repository serves as a starting point for a stream (series, probably) where
+I'll solve [The 7 Tasks of 7GUIs][7tasks] using [`xstate`][xstate] along with a
+few other technologies:
 
-First, run the development server:
+- [Chakra UI][chakra-ui]
+- [Storybook][storybook]
+- [`jest`][jest]
+- [`testing-library`][testing-library]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> The tasks were selected by the following criteria. The task set should be as
+> small as possible yet reflect as many typical (or fundamental or
+> representative) challenges in GUI programming as possible. Each task should be
+> as simple and self-contained as possible yet not too artificial. Preferably, a
+> task should be based on existing examples as that gives the task more
+> justification to be useful and there already will be at least one reference
+> implementation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The 7 Tasks are a set of GUI-based challenges, with each being increasingly more
+complex than the last. This affords us an opportunity to explore the
+technologies we're using gradually. Each task has new lessons for us to learn:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- how to capture feature requirements as tests with `jest` and `testing-library`
+- how to build isolated components with Storybook
+- how to design a GUI with Chakra UI
+- how to manage complex logic with `xstate`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## TODO
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [ ] Add solutions as branches
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[7tasks]: https://eugenkiss.github.io/7guis/tasks
+[7guis]: https://eugenkiss.github.io/7guis/
+[xstate]: https://github.com/statelyai/xstate
+[testing-library]: https://testing-library.com/
+[chakra-ui]: https://chakra-ui.com/
+[storybook]: https://storybook.js.org/
+[jest]: https://jestjs.io/
