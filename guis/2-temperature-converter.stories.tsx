@@ -1,3 +1,4 @@
+import {Box} from '@chakra-ui/react'
 import {TemperatureConverter} from './2-temperature-converter'
 
 export default {
@@ -5,4 +6,8 @@ export default {
   title: 'Temperature Converter',
 }
 
-export const TemperatureConverterGUI = () => <TemperatureConverter />
+export const TemperatureConverterGUI = () => (
+  <Box p={6}>
+    <TemperatureConverter />
+  </Box>
+)
