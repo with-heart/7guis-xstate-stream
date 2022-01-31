@@ -26,6 +26,9 @@ technologies we're using. Each task has new lessons for us to learn:
 - how to design a GUI with Chakra UI
 - how to manage complex logic with `xstate`
 
+I'll be streaming on Twitch:
+[twitch.tv/with_heart](https://twitch.tv/with_heart)
+
 ## TODO
 
 - [ ] Add solutions as branches
