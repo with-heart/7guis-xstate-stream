@@ -18,8 +18,8 @@ few other technologies:
 > implementation.
 
 The 7 Tasks are a set of GUI-based challenges, with each being increasingly more
-complex than the last. This affords us an opportunity to explore the
-technologies we're using gradually. Each task has new lessons for us to learn:
+complex than the last. This affords us an opportunity to gradually explore the
+technologies we're using. Each task has new lessons for us to learn:
 
 - how to capture feature requirements as tests with `jest` and `testing-library`
 - how to build isolated components with Storybook
