@@ -23,13 +23,6 @@ export interface Typegen0 {
     isValidTemperature: 'CHANGE_CELSIUS' | 'CHANGE_FAHRENHEIT'
   }
   eventsCausingDelays: {}
-  matchesStates:
-    | 'celsius'
-    | 'celsius.invalid'
-    | 'celsius.valid'
-    | 'fahrenheit'
-    | 'fahrenheit.invalid'
-    | 'fahrenheit.valid'
-    | {celsius?: 'invalid' | 'valid'; fahrenheit?: 'invalid' | 'valid'}
+  matchesStates: undefined
   tags: never
 }

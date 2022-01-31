@@ -21,48 +21,25 @@ const temperatureConverterMachine = createMachine(
       celsius: '',
       fahrenheit: '',
     },
-    type: 'parallel',
-    states: {
-      celsius: {
-        on: {
-          CHANGE_CELSIUS: [
-            {
-              cond: 'isValidTemperature',
-              target: '.valid',
-              actions: ['storeCelsius', 'updateFahrenheit'],
-            },
-            {
-              target: '.invalid',
-              actions: 'storeCelsius',
-            },
-          ],
+    on: {
+      CHANGE_CELSIUS: [
+        {
+          cond: 'isValidTemperature',
+          actions: ['storeCelsius', 'updateFahrenheit'],
         },
-        initial: 'invalid',
-        states: {
-          invalid: {},
-          valid: {},
+        {
+          actions: 'storeCelsius',
         },
-      },
-      fahrenheit: {
-        on: {
-          CHANGE_FAHRENHEIT: [
-            {
-              cond: 'isValidTemperature',
-              target: '.valid',
-              actions: ['storeFahrenheit', 'updateCelsius'],
-            },
-            {
-              target: '.invalid',
-              actions: 'storeFahrenheit',
-            },
-          ],
+      ],
+      CHANGE_FAHRENHEIT: [
+        {
+          cond: 'isValidTemperature',
+          actions: ['storeFahrenheit', 'updateCelsius'],
         },
-        initial: 'invalid',
-        states: {
-          invalid: {},
-          valid: {},
+        {
+          actions: 'storeFahrenheit',
         },
-      },
+      ],
     },
   },
   {
