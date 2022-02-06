@@ -29,6 +29,11 @@ technologies we're using. Each task has new lessons for us to learn:
 I'll be streaming on Twitch:
 [twitch.tv/with_heart](https://twitch.tv/with_heart)
 
+## Solutions
+
+- [Task 1: Counter](https://github.com/with-heart/7guis-xstate-stream/compare/1-solution)
+- [Task 2: Temperature Converter](https://github.com/with-heart/7guis-xstate-stream/compare/2-solution)
+
 ## TODO
 
 - [ ] Add solutions as branches
